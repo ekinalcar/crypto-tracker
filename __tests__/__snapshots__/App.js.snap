@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App test against snapshot 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "marginTop": 55,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Cryptocurrency App
+    </Text>
+  </View>
+  <View>
+    <Text>
+      Container
+    </Text>
+  </View>
+</View>
+`;

@@ -4,12 +4,7 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "jest",
-    "postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver"
-  },
-  "remotedev": {
-    "hostname": "localhost",
-    "port": 5678
+    "test": "jest"
   },
   "dependencies": {
     "expo": "^34.0.1",
@@ -29,12 +24,16 @@
     "@babel/core": "^7.0.0",
     "babel-preset-expo": "^6.0.0",
     "jest-expo": "^34.0.0",
+    "react-test-renderer": "^16.8.6",
     "redux-logger": "^3.0.6",
     "remote-redux-devtools": "^0.5.16",
     "remotedev-rn-debugger": "^0.8.4"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|sentry-expo|native-base)"
+    ]
   },
   "private": true
 }
